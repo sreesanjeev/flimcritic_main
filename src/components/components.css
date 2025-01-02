@@ -1,0 +1,134 @@
+.card{
+    flex:1 0 auto;
+    width: 250px;
+    height: 450px;
+    margin:auto;
+    display: grid;
+    grid-template-rows: 78% 18%;
+    gap: 4%;
+    padding: 0 0.6rem;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1080px) {
+    .card{
+        width: 200px;
+        height: 380px;
+    }
+}
+
+
+.card_img{
+    border-radius: 15px;
+    position: relative;
+}
+.card_img > *{
+    width: 100%;
+    height: 100%;
+}
+
+.card_img img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.date{
+    color: #a8a8a8;
+}
+.card_rating{
+    width: 50px;
+    height: 50px;
+}
+
+/* header */
+.header{
+    background-color: #16253dab;
+    backdrop-filter: blur(3px);
+    width:100%;
+    z-index:10;
+    color:#fff;
+}
+.header .wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.4rem 0;
+}
+
+.header nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.header .logo{
+    width: 10vw;
+}
+.header .logo img{
+    width: 30%;
+    object-fit: cover;
+}
+
+.header a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.4rem;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: 600;
+}
+.header a:hover{
+    color: #fe5555;
+}
+/* Updated Styles for Filter Component to Match Dark Theme */
+.filter-container {
+    background-color: #1a1a1a; /* Darker background for the entire filter section */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.filter-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2a2a2a; /* Darker background for the wrapper */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for contrast */
+}
+
+.filter-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f0f0f0; /* Light text color for readability on dark background */
+    margin-bottom: 30px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.filter-button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff; /* White text color */
+    background-color: #ff4757; /* Red accent color matching the "day" button in screenshot */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.filter-button:hover {
+    background-color: #e84118; /* Darker shade on hover */
+    transform: translateY(-2px);
+}
+
+.filter-button:focus {
+    outline: none;
+}

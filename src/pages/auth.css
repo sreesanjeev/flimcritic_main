@@ -1,0 +1,99 @@
+/* auth.css */
+
+/* Background styling */
+.auth-page {
+    background-image: url('https://path-to-your-movie-themed-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Auth card styling */
+.auth-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffcc00; /* A golden color reminiscent of film awards */
+}
+
+/* Input styling */
+.auth-card input[type="text"],
+.auth-card input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.auth-card input[type="text"]:focus,
+.auth-card input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.6); /* Glowing effect on focus */
+}
+
+/* Button styling */
+.auth-card button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-card button:hover {
+    background-color: #e6b800;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
+}
+
+/* Links */
+.auth-card .auth-link {
+    display: block;
+    margin-top: 20px;
+    color: #ffcc00;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.auth-card .auth-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .auth-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .auth-card button {
+        font-size: 1rem;
+    }
+}
